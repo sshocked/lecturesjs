@@ -10,4 +10,4 @@
 Урок 2
 оператор if
 
-Урок 5 [функции](/lessions/function/LESSON.md)
+Урок 5 [функции](lessons/function/LESSON.md)
