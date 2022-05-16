@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=lvGRb72EExs
 
 [Теория](https://learn.javascript.ru/types)
 
-`let balance = 100.5; //float`
+`let balance = 100; //int`
 
 `let fMoney = 100.5; //float`
 
@@ -18,7 +18,6 @@ https://www.youtube.com/watch?v=lvGRb72EExs
 `let isShowFalse = false; //boolean`
 
 `let arrA = [1, 2, 3, 4, 5]; //array`
-
 
 `//Объявляем money и записываем значение 500`
 

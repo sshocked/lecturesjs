@@ -48,4 +48,4 @@
 
 * [ ]  Сделать функцию `myDiv`которая принимает аргументы: num1, num2 и возвращает деление num1 на num2
 * [ ]  Сделать функцию сортировки `mySort`которая принимает аргументы: arr - массив чисел, direction - строка со значениями 'ASC' или 'DESC' и возвращает отсортированный массив при значении  ASC в возрастании при DESC по убываннию при некорректном(не равно asc и не равно desc) direction возвращает первоначальный массив, нужно использовать https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/sort для самой сортировки
-* [ ]  Сделать функцию calcSum которая пренимает массив чисел будет внутри использовать filter https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter функция должна отсортировать все числа больше 10
+* [ ]  Сделать функцию `calcSum` которая принимает массив чисел будет внутри использовать filter https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter функция должна отсортировать все числа больше 10
