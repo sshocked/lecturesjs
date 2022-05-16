@@ -10,9 +10,9 @@
 
     //создаем объект, задаем свойства
     let wallet = {
-    hotAccount: 1000, //свойство и значение
-    checkingAccount: 10000,
-    checker: {sum: 5, money: 100},
+       hotAccount: 1000, //свойство и значение
+       checkingAccount: 10000,
+       checker: {sum: 5, money: 100},
     };
     
     wallet.name = 'Имя'; //Добавляем нновое своейство
