@@ -12,7 +12,7 @@
     let wallet = {
        hotAccount: 1000, //свойство и значение
        checkingAccount: 10000,
-       checker: {sum: 5, money: 100},
+       checker: {sum: 5, money: 100}, //объект внутри объекта
     };
     
     wallet.name = 'Имя'; //Добавляем нновое своейство
