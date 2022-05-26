@@ -9,32 +9,55 @@ let myCalc = {
     },
     initHtml: function (target) {
         //вставка html
-        target.innerHTML = '<div id="calculator">\n' +
-            '    <!-- Screen and clear key -->\n' +
-            '    <div class="top">\n' +
-            '        <span class="clear">C</span>\n' +
-            '        <div class="screen">0</div>\n' +
-            '    </div>\n' +
-            '    <div class="keys">\n' +
-            '        <!-- operators and other keys -->\n' +
-            '        <span class="num">7</span>\n' +
-            '        <span class="num">8</span>\n' +
-            '        <span class="num">9</span>\n' +
-            '        <span class="operator">+</span>\n' +
-            '        <span class="num">4</span>\n' +
-            '        <span class="num">5</span>\n' +
-            '        <span class="num">6</span>\n' +
-            '        <span class="operator">-</span>\n' +
-            '        <span class="num">1</span>\n' +
-            '        <span class="num">2</span>\n' +
-            '        <span class="num">3</span>\n' +
-            '        <span class="operator">/</span>\n' +
-            '        <span class="num">0</span>\n' +
-            '        <span>.</span>\n' +
-            '        <span class="equal">=</span>\n' +
-            '        <span class="operator">*</span>\n' +
-            '    </div>\n' +
-            '</div>';
+        let divCalculator = document.createElement('div');
+        divCalculator.classList.add('calculator');
+
+        let divTop = document.createElement('div');
+        divTop.classList.add('top');
+        divCalculator.append(divTop);
+
+        let butDel = document.createElement('span');
+        butDel.classList.add('clear');
+        butDel.innerHTML = 'C';
+        divTop.append(butDel);
+
+        let result = document.createElement('div');
+        result.classList.add('screen');
+        result.innerHTML = '0';
+        divTop.append(result);
+
+        let divKeys = document.createElement('div');
+        divKeys.classList.add('keys');
+        divCalculator.append(divKeys);
+
+        let butObjList = [
+            {class: "num", value: 7},
+            {class: "num", value: 8},
+            {class: "num", value: 9},
+            {class: "operator", value: '+'},
+            {class: "num", value: 4},
+            {class: "num", value: 5},
+            {class: "num", value: 6},
+            {class: "operator", value: '-'},
+            {class: "num", value: 1},
+            {class: "num", value: 2},
+            {class: "num", value: 3},
+            {class: "operator", value: '/'},
+            {class: "num", value: 0},
+            {class: "dot", value: '.'},
+            {class: "equal", value: '='},
+            {class: "operator", value: '*'},
+        ];
+        let myBut = undefined;
+        for (let butObj of butObjList) {
+            myBut = document.createElement('span');
+            myBut.classList.add(butObj.class);
+            myBut.innerHTML = butObj.value;
+            divKeys.append(myBut);
+        }
+
+
+        target.append(divCalculator);
     },
     begin: function(target) {
         this.initHtml(target);
